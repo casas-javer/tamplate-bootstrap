@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/avv6anh.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.javer.maus.mx/app/views/css/style.css">
+    <link rel="stylesheet" href="https://www.javer.maus.mx/app/views/css/custom.css">
+    <script>var Path = "https://adminjaver.maus.mx";</script>
+</head>
+
+<body id="pagina" class="detalle editar cursor-auto" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <div class="container-fluid">
+
+
+        <!-- INICIO -->
+        <style>
+            .hero-image {
+                background-image: url("https://www.javer.com.mx/images/assets/1683936361_Sandara%20Residencial%20-%20Javer%20Premier%2072%20px-40.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .hero-image>div {
+                background-color: rgba(0, 0, 0, .7);
+            }
+
+            .container-fluid {
+                padding: 0;
+            }
+
+            div#header,
+            .whats,
+            footer#footer {
+                display: none !important;
+            }
+
+            div[style*="2147483647"] {
+                display: none !important;
+                width: 0px !important;
+            }
+
+            #title_frm,
+            button.btn.btn-primary.button,
+            #box_captcha {
+                margin-bottom: 1em;
+                scroll-margin-top: 20px;
+            }
+
+            img.logo {
+                max-width: 200px;
+            }
+
+            h2:before,
+            .titulo-desarrollo:before {
+                content: unset;
+            }
+
+            h2.subtitulos {
+                color: #c10d19;
+            }
+
+            .container-models {
+                position: relative;
+                padding: 0;
+            }
+
+            .badge {
+                top: 0;
+                right: 0px;
+                padding: 10px 18px;
+                font-size: 1.2rem;
+                /* box-shadow: -2px 2px 1px 0px #000; */
+                font-weight: 600;
+                color: #c10d19;
+                border-radius: 0px 0 0 30px !important;
+            }
+
+            .container-models img {
+                width: 100%;
+            }
+
+            .carousel-control-next,
+            .carousel-control-prev {
+                opacity: 1 !important;
+            }
+
+            .form-control:focus,
+            .btn-check:focus+.btn,
+            .btn:focus {
+                border-color: #c10d19;
+                box-shadow: none;
+                border: solid #c10d19 1px !important;
+            }
+
+            input:focus::placeholder {
+                color: #c10d19 !important;
+            }
+
+            .g-recaptcha>div {
+                margin: auto !important;
+            }
+
+            .img-gradient {
+                position: relative;
+                display: inline-block;
+            }
+
+
+            /* 
+#002f4b,#dc4225 
+Convert HEX to RGBA - http://hex2rgba.devoth.com/
+*/
+            .img-gradient:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                background: -moz-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 66, 37, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+                background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                background: -ms-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                background: linear-gradient(to bottom, rgb(255 255 255 / 0%) 30%, rgb(0 0 0 / 80%) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002f4b', endColorstr='#00000000', GradientType=0);
+            }
+
+            .img-gradient img {
+                display: block;
+            }
+
+            /* .container-models.shadow {
+                border-bottom: solid 3px #c10d19;
+            } */
+
+            .card-txt {
+                bottom: 40px;
+                z-index: 1;
+                color: white;
+                text-align: -webkit-center;
+                width: 96%;
+                padding: 0;
+                margin: 0;
+            }
+
+            h3.prototipo {
+                /* text-decoration: underline; */
+                width: fit-content;
+                font-weight: 400;
+                background: #c10d19;
+                padding: 5px 10px;
+                position: absolute;
+                top: 0;
+                color: white;
+                font-size: 1rem;
+            }
+
+            h3.ttl-proto3.mb-3 {
+                font-size: 1.1rem;
+                font-weight: 400;
+                padding: 5px;
+                border-bottom: 2px solid #fff;
+                width: fit-content;
+                background: #0000009e;
+                border-radius: 4px;
+            }
+
+            .position-absolute.card-txt:not(h3) {
+                font-size: 1rem;
+            }
+
+            .recamaras,
+            .banos,
+            .cocheras {
+                display: inline-block;
+            }
+
+            .recamaras {
+                padding-right: 10px;
+            }
+
+            .cocheras {
+                padding-left: 10px;
+            }
+
+            .banos {
+                border-left: solid 2px;
+                border-right: 2px solid;
+                padding: 0 10px;
+            }
+
+            .ttl-proto {
+                background-color: #c10d19;
+                border: 1px solid #fff;
+                width: fit-content;
+                padding: 5px 10px;
+                font-weight: 400;
+                font-size: 1rem;
+            }
+
+            .card-img-overlay {
+                background: linear-gradient(360deg, black, #00000008 80%);
+            }
+
+            h5.card-title {
+                border: solid 2px white;
+                width: fit-content;
+                padding: 8px;
+                align-items: center;
+                margin: auto;
+            }
+
+            .g-recaptcha {
+                display: none;
+            }
+
+              /* **********     ContactForm Validations     ********** */
+        .contact-form {
+            --form-ok-color: #4caf50;
+            --form-error-color: #f44336;
+        }
+
+        /* .form-group>*,
+        button[type="submit"] {
+            padding: 0.5rem;
+            margin: 1rem auto;
+            display: block;
+            width: 100%;
+        } */
+
+        .contact-form textarea {
+            resize: none;
+        }
+
+        .contact-form legend,
+        .contact-form-response {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            font-size: 1rem;
+            font-family: sans-serif;
+        }
+
+        button[type="submit"] {
+            width: 50%;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact-form *::placeholder {
+            color: #000;
+        }
+
+        [required]:valid {
+            border: thin solid var(--form-ok-color);
+        }
+
+        [required]:invalid {
+            border: thin solid var(--form-error-color);
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        .contact-form-error {
+            margin-top: -1rem;
+            font-size: 80%;
+            background-color: var(--form-error-color);
+            color: #fff;
+            transition: all 800ms ease;
+            font-family: sans-serif;
+        }
+
+        .contact-form-error.is-active {
+            display: block;
+            animation: show-message 1s 1 normal 0s ease-out both;
+        }
+
+        .none {
+            display: none;
+        }
+
+        @keyframes show-message {
+            0% {
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            100% {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+            @media (min-width: 992px) {
+                .modal-dialog {
+                    max-width: 850px;
+                }
+
+                .formulario {
+                    width: 75% !important;
+                }
+            }
+        </style>
+
+        <body-template class="d-flex flex-column min-vh-100">
+            <main class="flex-grow-1">
+                <section class="hero-image min-vh-100 text-white">
+                    <div class="min-vh-100 d-flex justify-content-center align-items-center text-center">
+                        <div class="container">
+                            <div class="row pt-xs-5 pt-sm-5 pb-xs-5 pb-sm-5">
+                                <div class="col-md-6 text-lg-start text-sm-center ">
+
+                                    <img src="https://www.javer.com.mx/images/assets/1598485794_logo_javer_GOOD.png"
+                                        class="logo mb-4 text-start">
+
+                                    <h1 class="mb-4  text-white">Residenza <br> privadas 4</h1>
+                                    <p style="color: #fff; font-size: 1.4rem;">Junto con tu familia
+                                        disfruta de la
+                                        comodidad y accesibilidad de tu nuevo hogar.</p>
+                                    <div class="mt-4">
+
+                                        <a id="btn_descubre" href="#feature"
+                                            class="btn letter-spacing-2 px-3 py-3 text-white mt-3 mt-sm-0 mb-5"
+                                            style=" background-color: #c10d19;">¡DESCUBRE TU NUEVO HOGAR!
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mt-xs-5 mt-sm-5 mt-lg-0">
+                                    <h2 id="title_frm" class="text-white">CONTACTA A UN ASESOR</h2>
+                                    <!-- interno -->
+                                    <!-- <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+                                        method="POST">
+                                        <input type="hidden" name="captcha_settings"
+                                            value="{&quot;keyname&quot;:&quot;CAPTCHAJAVER&quot;,&quot;fallback&quot;:&quot;true&quot;,&quot;orgId&quot;:&quot;00Do0000000b6Io&quot;,&quot;ts&quot;:&quot;&quot;}">
+                                        <input type="hidden" name="oid" value="00Do0000000b6Io">
+                                        <input type="hidden" name="retURL"
+                                            value="https://www.javer.com.mx/graciasmisiondelosangeles">
+                                        <input type="hidden" name="00N3l00000Q7A54"
+                                            value="MISION DE LOS ANGELES 1ER SECTOR ARCANGELES">
+                                        <input type="hidden" name="00N3l00000Q7A57" value="Landing_misiondelosangeles">
+                                        <div class="row w-75 m-auto">
+                                            <div class="col-md-6 mb-2">
+                                                <div class="form-group">
+
+                                                    <input placeholder="Nombre" id="first_name" maxlength="40"
+                                                        name="first_name" size="20" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-2">
+                                                <div class="form-group">
+
+                                                    <input placeholder="Apellido" id="last_name" maxlength="80"
+                                                        name="last_name" size="20" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-2">
+                                                <div class="form-group">
+
+                                                    <input placeholder="Correo" id="email" maxlength="80" name="email"
+                                                        size="80" type="email" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-2">
+                                                <div class="form-group">
+
+                                                    <input placeholder="Teléfono" id="phone" maxlength="40" name="phone"
+                                                        size="20" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                           <div id="box_captcha" class="col-md-12 mt-3">
+                                                <div class="g-recaptcha row justify-content-center"
+                                                    data-sitekey="6Lcg2vQZAAAAAHpqmf6Pj_-t-doxKr1iwLWfQuWQ">
+                                                    <div style="width: 304px; height: 78px; padding: 0;">
+                                                        <div><iframe title="reCAPTCHA"
+                                                                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lcg2vQZAAAAAHpqmf6Pj_-t-doxKr1iwLWfQuWQ&amp;co=aHR0cHM6Ly93d3cuamF2ZXIubWF1cy5teDo0NDM.&amp;hl=es-419&amp;v=3kTz7WGoZLQTivI-amNftGZO&amp;size=normal&amp;cb=hf79k8sgr1u9"
+                                                                width="304" height="78" role="presentation"
+                                                                name="a-hfq84m52mo22" frameborder="0" scrolling="no"
+                                                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                                        </div><textarea id="g-recaptcha-response"
+                                                            name="g-recaptcha-response" class="g-recaptcha-response"
+                                                            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                                    </div><iframe style="display: none;"></iframe>
+                                                </div><br>
+                                                <button type="submit" name="submit"
+                                                class="btn btn-primary button">ENVIAR MIS DATOS</button>
+                                            </div>
+   
+                                            </div>
+                                            <div class="col-md-12">
+                                                <h6 style="margin-bottom: 15px;"><a
+                                                        href="https://www.javer.com.mx/terminos-y-condiciones"
+                                                        target="_Blank"
+                                                        style="color: white; transition-property: all; font-size: 14px;">*Aplican
+                                                        términos y condiciones</a>
+                                                    <br>
+                                                    <a href="https://www.javer.com.mx/aviso-clientes-queretaro"
+                                                        target="_Blank"
+                                                        style="color: white; transition-property: all; font-size: 14px;">*Ver
+                                                        aviso de privacidad</a>
+                                                </h6>
+
+                                            </div>
+                                        </div>
+                                    </form> -->
+                                    <!-- DE TI -->
+                                    <form class="contact-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+                                    method="POST">
+                                    <input type="hidden" name="captcha_settings"
+                                        value="{&quot;keyname&quot;:&quot;CAPTCHAJAVER&quot;,&quot;fallback&quot;:&quot;true&quot;,&quot;orgId&quot;:&quot;00Do0000000b6Io&quot;,&quot;ts&quot;:&quot;&quot;}">
+                                    <input type="hidden" name="oid" value="00Do0000000b6Io">
+                                    <input type="hidden" name="retURL" value="https://www.javer.com.mx/graciasmisiondelosangeles">
+                                    <input type="hidden" name="00N3l00000Q7A54" value="MISION DE LOS ANGELES 1ER SECTOR ARCANGELES">
+                                    <input type="hidden" name="00N3l00000Q7A57" value="Landing_misiondelosangeles">
+                                    <div class="row m-auto formulario">
+                                        <div class="col-md-6 mb-2">
+                                            <div class="form-group">
+                                                <!-- <label style="color: rgb(0, 0, 0); font-size: 16px; font-weight: normal;">Nombre</label> -->
+                                                <input placeholder="Nombre" id="first_name" maxlength="40" name="first_name" size="20" type="text"
+                                                    class="form-control rounded-0 py-2" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                                                    title="El nombre solo acepta letras y espacios en blanco" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <div class="form-group">
+                                                <!-- <label style="color: rgb(0, 0, 0); font-size: 16px; font-weight: normal;">Apellido</label> -->
+                                                <input placeholder="Apellido" id="last_name" maxlength="80" name="last_name" size="20" type="text"
+                                                    class="form-control rounded-0 py-2">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-2">
+                                            <div class="form-group">
+                                                <!-- <label style="color: rgb(0, 0, 0); font-size: 16px; font-weight: normal;">Correo</label> -->
+                                                <input placeholder="Correo" id="email" maxlength="80" name="email" size="80" type="email"
+                                                    class="form-control rounded-0 py-2" title="Email no valido"
+                                                    pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" required>
+                            
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-2">
+                                            <div class="form-group">
+                                                <!-- <label style="color: rgb(0, 0, 0); font-size: 16px; font-weight: normal;">Teléfono&nbsp;</label> -->
+                                                <input placeholder="Teléfono" id="phone" maxlength="40" name="phone" size="20" type="text"
+                                                    class="form-control rounded-0 py-2" pattern="^\d{8,10}$"
+                                                    title="el teléfono no puede tener más de 10 números" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-2">
+                                            <div class="g-recaptcha" data-sitekey="6Lcg2vQZAAAAAHpqmf6Pj_-t-doxKr1iwLWfQuWQ"></div><br>
+                                            <button type="submit" name="submit" class="btn btn-primary button">ENVIAR MIS DATOS</button>
+                                            <div class="contact-form-loader none">
+                                                <img src="https://samherbert.net/svg-loaders/svg-loaders/oval.svg" alt="">
+                                            </div>
+                                            <div style="color: white;" class="contact-form-response none">
+                                                Los datos han sido enviados
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <h6 style="margin-bottom: 15px;"><a href="https://www.javer.com.mx/terminos-y-condiciones"
+                                                    target="_Blank" style="color: white; transition-property: all; font-size: 14px;">*Aplican
+                                                    términos y condiciones</a>
+                                                <br>
+                                                <a href="https://www.javer.com.mx/aviso-clientes-queretaro" target="_Blank"
+                                                    style="color: white; transition-property: all; font-size: 14px;">*Ver
+                                                    aviso de privacidad</a>
+                                            </h6>
+                            
+                                        </div>
+                                    </div>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="container pb-5 pt-5 " id="feature">
+                    <section class="row align-items-lg-center pb-5 pt-3 ">
+                        <article class="col-md-6 offset-md-3  text-center">
+                            <img class="mb-4" style="width: 200px; height: auto;"
+                                src="https://www.javer.com.mx/images/desarrollos/1688769825_Residenza_Vertical_color.png"
+                                alt="">
+                            <!-- <h2 class="subtitulos">Detalles del Desarrollo</h2> -->
+                            <p class="mb-5"><strong>Residenza Privadas 4</strong> es una exclusiva y amplia privada con
+                                casas de
+                                <strong>3 recámaras</strong>, que
+                                cuentan con un <strong>diseño arquitectónico moderno</strong>.
+                            </p>
+                        </article>
+                        <article class="col-md-8 offset-md-2">
+                            <video id="videoBanner" style="width:100%" autoplay="" loop="" muted="" playsinline="">
+                                <source
+                                    src="https://www.javer.com.mx/images/files/desarrollos/videos/1691778803_residenza.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </article>
+                        <!-- <article class="col-12 col-lg-6">
+
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.javer.com.mx/images/assets/1683936339_Sandara%20Residencial%20-%20Javer%20Premier%2072%20px-57.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.javer.com.mx/images/assets/1683936281_Sandara%20Residencial%20-%20Javer%20Premier%2072%20px-64.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.javer.com.mx/images/assets/1683936297_Sandara%20Residencial%20-%20Javer%20Premier%2072%20px-69.jpg"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </article> -->
+                    </section>
+                    <hr>
+                    <section class="pb-5 pt-5">
+                        <div class="row">
+                            <h2 class="pb-3 subtitulos text-center"> Modelos de Casas</h2>
+                            <!-- <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3  position-relative">
+                                <div class="container-models shadow img-gradient">
+                                    <img src="https://www.javer.com.mx/images/desarrollos/1691704904_Residenza-Javer-Premier-800x600px%20WEB.webp"
+                                        alt="Imagen">
+                                   <div class="badge bg-white position-absolute rounded-0">comentar 
+                                    </div> 
+                                    <h3 class="prototipo mb-3">JAVER PREMIERE</h3>
+                                </div>
+
+                                <div class="position-absolute card-txt">
+                                    <h3 class="ttl-proto mb-3">JAVER PREMIERE</h3>
+                                    <div class="recamaras">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 664 535"
+                                            version="1.1">
+                                            <path
+                                                d="M 146.215 37.940 C 123.426 44.455, 107.348 60.640, 99.728 84.734 C 97.631 91.366, 97.582 93.055, 97.244 170.236 L 96.900 248.972 91.360 253.736 C 83.857 260.190, 77.681 268.632, 72.541 279.461 C 64.846 295.676, 65 293.322, 65 394.372 L 65 483.704 67.253 487.048 C 73.596 496.460, 87.602 496.786, 94.395 487.679 C 96.399 484.993, 96.514 483.516, 96.795 456.929 L 97.089 429 327 429 L 556.911 429 557.205 456.929 C 557.486 483.516, 557.601 484.993, 559.605 487.679 C 566.398 496.786, 580.404 496.460, 586.747 487.048 L 589 483.704 589 394.372 C 589 315.274, 588.811 304.093, 587.346 296.770 C 584.273 281.402, 576.322 267.077, 564.482 255.578 L 557.102 248.410 556.740 169.955 C 556.339 82.884, 556.679 87.442, 549.475 72.500 C 543.318 59.730, 532.512 48.936, 519.504 42.564 C 505.138 35.527, 518.984 35.992, 326.356 36.071 C 162.164 36.139, 152.151 36.242, 146.215 37.940 M 155.344 69.033 C 145.672 70.966, 137.506 77.540, 133.134 86.914 C 130.580 92.388, 130.521 93.007, 130.164 117.755 L 129.800 143.010 136.107 140.027 C 149.024 133.918, 149.747 133.870, 223.010 134.259 C 283.228 134.579, 290.066 134.780, 295.500 136.394 C 304.424 139.043, 314.072 144.469, 320.986 150.725 L 327.132 156.287 331.316 152.331 C 339.662 144.441, 348.067 139.521, 358.554 136.388 C 363.934 134.781, 370.830 134.579, 430.990 134.259 C 504.174 133.871, 504.989 133.924, 517.793 139.980 L 524 142.915 523.988 120.208 C 523.976 97.015, 523.289 91.322, 519.654 84.297 C 517.135 79.427, 511.117 74.011, 505 71.109 L 499.500 68.500 329.500 68.351 C 236 68.269, 157.630 68.576, 155.344 69.033 M 150.357 169.082 C 144.183 171.456, 136.618 177.868, 134.049 182.904 C 131.021 188.838, 130 197.262, 130 216.297 L 130 234.227 133.250 233.466 C 135.037 233.048, 175.762 232.530, 223.750 232.316 L 311 231.927 310.980 216.714 C 310.946 190.775, 308.499 181.928, 299.265 174.361 C 289.951 166.729, 292.817 166.994, 220.239 167.052 C 158.208 167.102, 155.285 167.187, 150.357 169.082 M 363.282 169.096 C 357.262 171.427, 350.079 177.964, 347.080 183.843 C 344.206 189.477, 343.043 198.889, 343.020 216.709 L 343 231.918 430.750 232.292 C 479.013 232.498, 519.737 233.019, 521.250 233.450 L 524 234.233 524 215.666 C 524 196.555, 523.080 189.124, 519.949 182.932 C 517.762 178.607, 511.615 172.901, 505.795 169.793 L 501.500 167.500 435 167.288 C 370.400 167.082, 368.351 167.133, 363.282 169.096 M 139.951 266.051 C 127.756 267.869, 116.986 273.656, 109.621 282.349 C 104.809 288.028, 102.817 291.553, 99.692 299.913 C 97.709 305.218, 97.585 307.808, 97.230 351.250 L 96.857 397 327 397 L 557.143 397 556.770 351.250 C 556.416 307.904, 556.287 305.208, 554.322 299.952 C 550.684 290.226, 547.854 285.649, 541.836 279.761 C 535.685 273.742, 530.186 270.470, 521 267.363 C 515.722 265.578, 508.019 265.497, 330.500 265.363 C 228.750 265.286, 143.003 265.596, 139.951 266.051"
+                                                stroke="none" fill="#fff" fill-rule="evenodd" />
+                                        </svg> <br> 3 recamaras
+                                    </div>
+
+                                    <div class="banos">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 688 679"
+                                            version="1.1">
+                                            <path
+                                                d="M 127.238 23.110 C 115.775 25.020, 101.553 31.281, 92.751 38.292 C 85.694 43.913, 77.019 55.129, 72.480 64.500 C 64.636 80.695, 65 73.460, 65 212.958 L 65 337 53.750 337.006 C 40.930 337.012, 36.353 337.991, 31.995 341.658 C 27.431 345.498, 25.654 349.658, 25.654 356.500 C 25.654 365.861, 30.484 372.652, 38.781 374.956 C 43.970 376.397, 636.030 376.397, 641.219 374.956 C 649.516 372.652, 654.346 365.861, 654.346 356.500 C 654.346 347.139, 649.516 340.348, 641.219 338.044 C 638.704 337.345, 551.156 337.009, 370.750 337.006 L 104 337 104.015 214.250 C 104.031 86.165, 103.968 88.190, 108.198 80.500 C 110.923 75.547, 121.162 66.240, 126.500 63.864 C 130.301 62.173, 133.425 61.634, 139.524 61.619 C 146.451 61.603, 148.465 62.029, 154.258 64.740 C 159.918 67.389, 163.730 70.597, 178.635 85.256 L 196.303 102.632 192.743 109.066 C 186.211 120.869, 183.741 130.634, 183.274 146.500 C 182.906 158.994, 183.131 161.544, 185.362 170.206 C 189.331 185.614, 194.757 195.830, 207.108 211.154 L 209.248 213.809 206.414 217.524 C 202.438 222.737, 201.898 231.742, 205.218 237.458 C 208.144 242.497, 214.513 246.991, 219.718 247.689 C 228.603 248.881, 226.772 250.479, 298.279 179.131 C 345.485 132.029, 365.671 111.235, 367.150 108.184 C 371.450 99.314, 367.339 88.256, 357.852 83.173 C 351.859 79.962, 345.488 80.566, 339.295 84.931 L 334.741 88.141 331.621 85.214 C 315.240 69.845, 293.990 61.779, 270 61.826 C 254.882 61.855, 245.492 63.992, 233 70.245 L 224.500 74.500 205.500 55.943 C 185.214 36.129, 178.106 30.919, 165.306 26.477 C 153.108 22.244, 139.606 21.050, 127.238 23.110 M 255.579 103.103 C 248.356 105.587, 243.106 109.111, 235.913 116.304 C 229.415 122.803, 225.782 129.140, 223.476 138 C 219.871 151.851, 224.375 170.812, 233.928 182 L 236.917 185.500 271.975 150.500 L 307.034 115.500 303.767 112.717 C 291.695 102.434, 270.070 98.120, 255.579 103.103 M 65 452.331 C 65 483.806, 65.256 490.054, 66.912 499.081 C 71.598 524.615, 82.286 546.819, 98.530 564.770 L 104 570.815 104.044 603.157 C 104.097 642.415, 104.489 644.145, 114.490 649.249 C 121.920 653.041, 132.931 651.159, 138.345 645.173 C 142.123 640.995, 142.910 636.228, 142.956 617.250 C 142.980 607.212, 143.212 599, 143.471 599 C 143.731 599, 146.543 600.162, 149.721 601.582 C 158.439 605.476, 166.350 607.797, 178.425 610.004 C 189.030 611.942, 193.760 612, 340 612 C 486.240 612, 490.970 611.942, 501.575 610.004 C 513.729 607.783, 521.610 605.484, 530.374 601.602 C 533.605 600.171, 536.418 599, 536.624 599 C 536.831 599, 537.011 606.763, 537.024 616.250 C 537.057 640.221, 538.209 644.005, 546.962 648.893 C 554.538 653.124, 565.693 651.422, 571.345 645.173 C 575.519 640.557, 575.910 636.992, 575.956 603.157 L 576 570.815 581.470 564.770 C 597.498 547.059, 608.043 525.337, 613.157 499.500 C 614.829 491.056, 615.223 483.783, 615.691 452.750 L 616.245 416 596.123 416 L 576 416 576 449.369 C 576 484.782, 575.217 493.520, 570.835 507 C 561.099 536.952, 533.537 562.046, 501.377 570.239 L 492.500 572.500 340 572.500 L 187.500 572.500 178.623 570.239 C 146.568 562.073, 118.870 536.854, 109.165 507 C 104.783 493.520, 104 484.782, 104 449.369 L 104 416 84.500 416 L 65 416 65 452.331"
+                                                stroke="none" fill="#fff" fill-rule="evenodd" />
+                                        </svg> <br> 2.5 baños
+                                    </div>
+
+                                    <div class="cocheras">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 864 597"
+                                            version="1.1">
+                                            <path
+                                                d="M 243.847 19.019 C 211.030 22.951, 183.043 42.986, 167.744 73.500 C 165.813 77.350, 155.339 103, 144.467 130.500 C 133.595 158, 121.500 188.573, 117.589 198.439 L 110.478 216.378 103.735 218.080 C 82.038 223.556, 62.654 239.658, 53.026 260.204 C 45.381 276.517, 45.687 272.754, 45.263 355.706 C 45.028 401.793, 45.262 432.641, 45.882 437.113 C 48.075 452.940, 57.316 464.127, 72.472 469.301 C 74.137 469.869, 86.722 470.597, 100.438 470.917 L 125.376 471.500 127.102 478.346 C 140.587 531.833, 187.914 568.972, 242.619 568.996 C 266.238 569.006, 292.745 560.259, 311.538 546.252 C 320.863 539.301, 333.939 525.926, 339.683 517.463 C 347.363 506.148, 354.230 490.332, 358.011 475.250 L 359.077 471 439 471 L 518.923 471 519.989 475.250 C 523.949 491.045, 530.750 506.421, 539.188 518.659 C 545.369 527.624, 561.222 543.052, 570.690 549.316 C 606.093 572.741, 651.086 575.302, 689.300 556.068 C 719.694 540.770, 742.375 512.151, 750.898 478.346 L 752.624 471.500 777.562 470.957 C 796.649 470.542, 803.476 470.049, 806.659 468.856 C 818.101 464.567, 825.847 457.104, 830.119 446.252 C 832.266 440.798, 832.404 438.861, 832.785 408.848 C 833.478 354.288, 830.209 332.133, 817.501 305.252 C 799.128 266.389, 764.641 236.229, 723.505 223.052 C 714.643 220.214, 699.871 216.924, 689.699 215.523 L 684.897 214.862 619.657 133.181 C 580.891 84.646, 551.796 49.112, 547.958 45.616 C 537.029 35.659, 522.327 26.975, 510.500 23.490 C 493.137 18.374, 501.061 18.662, 371.500 18.434 C 304.950 18.317, 247.506 18.580, 243.847 19.019 M 250 58.021 C 230.342 60.252, 214.101 71.106, 205.029 88.078 C 201.967 93.808, 154.004 212.400, 154.001 214.250 C 154.001 214.662, 191.575 215, 237.500 215 L 321 215 321 136 L 321 57 288.750 57.142 C 271.012 57.220, 253.575 57.616, 250 58.021 M 360 135.929 L 360 215 497 215 C 572.350 215, 634 214.783, 634 214.517 C 634 212.918, 526.550 80.226, 520.600 74.478 C 512.708 66.853, 504.888 62.162, 495.500 59.421 C 490.127 57.852, 482.732 57.627, 424.750 57.264 L 360 56.858 360 135.929 M 118.500 254.980 C 105.215 256.544, 93.729 264.695, 88.321 276.395 L 85.500 282.500 85.225 357.250 L 84.951 432 105.007 432 C 120.178 432, 125.157 431.696, 125.451 430.750 C 125.665 430.063, 127.012 425.225, 128.444 420 C 135.359 394.777, 150.803 372.663, 173.152 355.984 C 202.509 334.076, 243.488 327.747, 279.253 339.597 C 308.392 349.252, 333.835 371.245, 347.972 399 C 350.735 404.424, 355.999 419.465, 358.033 427.750 L 359.077 432 439 432 L 518.923 432 519.967 427.750 C 521.898 419.884, 527.204 404.540, 529.735 399.500 C 546.461 366.194, 577.945 342.523, 615 335.393 C 625.945 333.287, 645.919 333.253, 656.500 335.322 C 681.772 340.264, 702.976 351.606, 720.549 369.582 C 733.985 383.328, 744.524 401.645, 749.556 420 C 750.988 425.225, 752.335 430.063, 752.549 430.750 C 752.843 431.697, 757.939 432, 773.575 432 L 794.213 432 793.734 397.750 C 793.237 362.303, 792.397 353.448, 788.080 338.183 C 779.654 308.388, 757.409 281.671, 729.272 267.552 C 714.293 260.035, 701.254 256.596, 681.500 254.949 C 668.671 253.880, 127.593 253.910, 118.500 254.980 M 225 374.427 C 208.121 378.179, 196.598 384.967, 184.369 398.363 C 177.477 405.912, 172.942 413.150, 168.937 422.991 C 164.818 433.111, 163.662 441.225, 164.249 455.893 C 164.684 466.759, 165.172 469.605, 167.782 476.500 C 173.458 491.498, 181.202 502.796, 191.897 511.688 C 200.450 518.798, 206.742 522.397, 216 525.474 C 246.574 535.634, 278.598 527.676, 299.568 504.706 C 332.003 469.178, 326.407 415.935, 287.172 386.781 C 274.603 377.441, 259.788 372.946, 242.090 373.102 C 235.716 373.159, 228.025 373.755, 225 374.427 M 616.021 375.008 C 584.882 383.410, 561.749 409.990, 557.960 441.722 C 553.822 476.380, 573.629 510.668, 605.439 523.910 C 613.333 527.197, 627.220 530.012, 635.381 529.980 C 648.078 529.931, 664.688 525.768, 674.239 520.242 C 681.086 516.280, 693.388 505.500, 697.807 499.590 C 722.450 466.628, 719.310 422.608, 690.340 394.918 C 679.317 384.381, 672.340 380.099, 659.500 375.986 C 649.168 372.676, 626.547 372.168, 616.021 375.008"
+                                                stroke="none" fill="#fff" fill-rule="evenodd" />
+                                        </svg> <br> 2 cocheras
+                                    </div>
+
+                                </div>
+                            </div> -->
+                            <div class="col-md-6 col-lg-6 pb-3  position-relative">
+                                <div class="container-models  img-gradient">
+                                    <img src="https://www.javer.com.mx/images/desarrollos/1691704904_Residenza-Javer-Premier-800x600px%20WEB.webp"
+                                        alt="Imagen">
+                                    <!-- <div class="badge bg-white position-absolute rounded-0">comentar 
+                                    </div>  -->
+                                    <!-- <h3 class="prototipo mb-3">JAVER PREMIERE</h3> -->
+                                </div>
+
+                                <div class="position-absolute card-txt">
+                                    <h3 class="ttl-proto mb-3">JAVER PREMIERE 1</h3>
+                                    <div class="recamaras">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 664 535"
+                                            version="1.1">
+                                            <path
+                                                d="M 146.215 37.940 C 123.426 44.455, 107.348 60.640, 99.728 84.734 C 97.631 91.366, 97.582 93.055, 97.244 170.236 L 96.900 248.972 91.360 253.736 C 83.857 260.190, 77.681 268.632, 72.541 279.461 C 64.846 295.676, 65 293.322, 65 394.372 L 65 483.704 67.253 487.048 C 73.596 496.460, 87.602 496.786, 94.395 487.679 C 96.399 484.993, 96.514 483.516, 96.795 456.929 L 97.089 429 327 429 L 556.911 429 557.205 456.929 C 557.486 483.516, 557.601 484.993, 559.605 487.679 C 566.398 496.786, 580.404 496.460, 586.747 487.048 L 589 483.704 589 394.372 C 589 315.274, 588.811 304.093, 587.346 296.770 C 584.273 281.402, 576.322 267.077, 564.482 255.578 L 557.102 248.410 556.740 169.955 C 556.339 82.884, 556.679 87.442, 549.475 72.500 C 543.318 59.730, 532.512 48.936, 519.504 42.564 C 505.138 35.527, 518.984 35.992, 326.356 36.071 C 162.164 36.139, 152.151 36.242, 146.215 37.940 M 155.344 69.033 C 145.672 70.966, 137.506 77.540, 133.134 86.914 C 130.580 92.388, 130.521 93.007, 130.164 117.755 L 129.800 143.010 136.107 140.027 C 149.024 133.918, 149.747 133.870, 223.010 134.259 C 283.228 134.579, 290.066 134.780, 295.500 136.394 C 304.424 139.043, 314.072 144.469, 320.986 150.725 L 327.132 156.287 331.316 152.331 C 339.662 144.441, 348.067 139.521, 358.554 136.388 C 363.934 134.781, 370.830 134.579, 430.990 134.259 C 504.174 133.871, 504.989 133.924, 517.793 139.980 L 524 142.915 523.988 120.208 C 523.976 97.015, 523.289 91.322, 519.654 84.297 C 517.135 79.427, 511.117 74.011, 505 71.109 L 499.500 68.500 329.500 68.351 C 236 68.269, 157.630 68.576, 155.344 69.033 M 150.357 169.082 C 144.183 171.456, 136.618 177.868, 134.049 182.904 C 131.021 188.838, 130 197.262, 130 216.297 L 130 234.227 133.250 233.466 C 135.037 233.048, 175.762 232.530, 223.750 232.316 L 311 231.927 310.980 216.714 C 310.946 190.775, 308.499 181.928, 299.265 174.361 C 289.951 166.729, 292.817 166.994, 220.239 167.052 C 158.208 167.102, 155.285 167.187, 150.357 169.082 M 363.282 169.096 C 357.262 171.427, 350.079 177.964, 347.080 183.843 C 344.206 189.477, 343.043 198.889, 343.020 216.709 L 343 231.918 430.750 232.292 C 479.013 232.498, 519.737 233.019, 521.250 233.450 L 524 234.233 524 215.666 C 524 196.555, 523.080 189.124, 519.949 182.932 C 517.762 178.607, 511.615 172.901, 505.795 169.793 L 501.500 167.500 435 167.288 C 370.400 167.082, 368.351 167.133, 363.282 169.096 M 139.951 266.051 C 127.756 267.869, 116.986 273.656, 109.621 282.349 C 104.809 288.028, 102.817 291.553, 99.692 299.913 C 97.709 305.218, 97.585 307.808, 97.230 351.250 L 96.857 397 327 397 L 557.143 397 556.770 351.250 C 556.416 307.904, 556.287 305.208, 554.322 299.952 C 550.684 290.226, 547.854 285.649, 541.836 279.761 C 535.685 273.742, 530.186 270.470, 521 267.363 C 515.722 265.578, 508.019 265.497, 330.500 265.363 C 228.750 265.286, 143.003 265.596, 139.951 266.051"
+                                                stroke="none" fill="#fff" fill-rule="evenodd" />
+                                        </svg> <br> 3 recamaras
+                                    </div>
+
+                                    <div class="banos">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 688 679"
+                                            version="1.1">
+                                            <path
+                                                d="M 127.238 23.110 C 115.775 25.020, 101.553 31.281, 92.751 38.292 C 85.694 43.913, 77.019 55.129, 72.480 64.500 C 64.636 80.695, 65 73.460, 65 212.958 L 65 337 53.750 337.006 C 40.930 337.012, 36.353 337.991, 31.995 341.658 C 27.431 345.498, 25.654 349.658, 25.654 356.500 C 25.654 365.861, 30.484 372.652, 38.781 374.956 C 43.970 376.397, 636.030 376.397, 641.219 374.956 C 649.516 372.652, 654.346 365.861, 654.346 356.500 C 654.346 347.139, 649.516 340.348, 641.219 338.044 C 638.704 337.345, 551.156 337.009, 370.750 337.006 L 104 337 104.015 214.250 C 104.031 86.165, 103.968 88.190, 108.198 80.500 C 110.923 75.547, 121.162 66.240, 126.500 63.864 C 130.301 62.173, 133.425 61.634, 139.524 61.619 C 146.451 61.603, 148.465 62.029, 154.258 64.740 C 159.918 67.389, 163.730 70.597, 178.635 85.256 L 196.303 102.632 192.743 109.066 C 186.211 120.869, 183.741 130.634, 183.274 146.500 C 182.906 158.994, 183.131 161.544, 185.362 170.206 C 189.331 185.614, 194.757 195.830, 207.108 211.154 L 209.248 213.809 206.414 217.524 C 202.438 222.737, 201.898 231.742, 205.218 237.458 C 208.144 242.497, 214.513 246.991, 219.718 247.689 C 228.603 248.881, 226.772 250.479, 298.279 179.131 C 345.485 132.029, 365.671 111.235, 367.150 108.184 C 371.450 99.314, 367.339 88.256, 357.852 83.173 C 351.859 79.962, 345.488 80.566, 339.295 84.931 L 334.741 88.141 331.621 85.214 C 315.240 69.845, 293.990 61.779, 270 61.826 C 254.882 61.855, 245.492 63.992, 233 70.245 L 224.500 74.500 205.500 55.943 C 185.214 36.129, 178.106 30.919, 165.306 26.477 C 153.108 22.244, 139.606 21.050, 127.238 23.110 M 255.579 103.103 C 248.356 105.587, 243.106 109.111, 235.913 116.304 C 229.415 122.803, 225.782 129.140, 223.476 138 C 219.871 151.851, 224.375 170.812, 233.928 182 L 236.917 185.500 271.975 150.500 L 307.034 115.500 303.767 112.717 C 291.695 102.434, 270.070 98.120, 255.579 103.103 M 65 452.331 C 65 483.806, 65.256 490.054, 66.912 499.081 C 71.598 524.615, 82.286 546.819, 98.530 564.770 L 104 570.815 104.044 603.157 C 104.097 642.415, 104.489 644.145, 114.490 649.249 C 121.920 653.041, 132.931 651.159, 138.345 645.173 C 142.123 640.995, 142.910 636.228, 142.956 617.250 C 142.980 607.212, 143.212 599, 143.471 599 C 143.731 599, 146.543 600.162, 149.721 601.582 C 158.439 605.476, 166.350 607.797, 178.425 610.004 C 189.030 611.942, 193.760 612, 340 612 C 486.240 612, 490.970 611.942, 501.575 610.004 C 513.729 607.783, 521.610 605.484, 530.374 601.602 C 533.605 600.171, 536.418 599, 536.624 599 C 536.831 599, 537.011 606.763, 537.024 616.250 C 537.057 640.221, 538.209 644.005, 546.962 648.893 C 554.538 653.124, 565.693 651.422, 571.345 645.173 C 575.519 640.557, 575.910 636.992, 575.956 603.157 L 576 570.815 581.470 564.770 C 597.498 547.059, 608.043 525.337, 613.157 499.500 C 614.829 491.056, 615.223 483.783, 615.691 452.750 L 616.245 416 596.123 416 L 576 416 576 449.369 C 576 484.782, 575.217 493.520, 570.835 507 C 561.099 536.952, 533.537 562.046, 501.377 570.239 L 492.500 572.500 340 572.500 L 187.500 572.500 178.623 570.239 C 146.568 562.073, 118.870 536.854, 109.165 507 C 104.783 493.520, 104 484.782, 104 449.369 L 104 416 84.500 416 L 65 416 65 452.331"
+                                                stroke="none" fill="#fff" fill-rule="evenodd" />
+                                        </svg> <br> 2.5 baños
+                                    </div>
+
+                                    <div class="cocheras">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 864 597"
+                                            version="1.1">
+                                            <path
+                                                d="M 243.847 19.019 C 211.030 22.951, 183.043 42.986, 167.744 73.500 C 165.813 77.350, 155.339 103, 144.467 130.500 C 133.595 158, 121.500 188.573, 117.589 198.439 L 110.478 216.378 103.735 218.080 C 82.038 223.556, 62.654 239.658, 53.026 260.204 C 45.381 276.517, 45.687 272.754, 45.263 355.706 C 45.028 401.793, 45.262 432.641, 45.882 437.113 C 48.075 452.940, 57.316 464.127, 72.472 469.301 C 74.137 469.869, 86.722 470.597, 100.438 470.917 L 125.376 471.500 127.102 478.346 C 140.587 531.833, 187.914 568.972, 242.619 568.996 C 266.238 569.006, 292.745 560.259, 311.538 546.252 C 320.863 539.301, 333.939 525.926, 339.683 517.463 C 347.363 506.148, 354.230 490.332, 358.011 475.250 L 359.077 471 439 471 L 518.923 471 519.989 475.250 C 523.949 491.045, 530.750 506.421, 539.188 518.659 C 545.369 527.624, 561.222 543.052, 570.690 549.316 C 606.093 572.741, 651.086 575.302, 689.300 556.068 C 719.694 540.770, 742.375 512.151, 750.898 478.346 L 752.624 471.500 777.562 470.957 C 796.649 470.542, 803.476 470.049, 806.659 468.856 C 818.101 464.567, 825.847 457.104, 830.119 446.252 C 832.266 440.798, 832.404 438.861, 832.785 408.848 C 833.478 354.288, 830.209 332.133, 817.501 305.252 C 799.128 266.389, 764.641 236.229, 723.505 223.052 C 714.643 220.214, 699.871 216.924, 689.699 215.523 L 684.897 214.862 619.657 133.181 C 580.891 84.646, 551.796 49.112, 547.958 45.616 C 537.029 35.659, 522.327 26.975, 510.500 23.490 C 493.137 18.374, 501.061 18.662, 371.500 18.434 C 304.950 18.317, 247.506 18.580, 243.847 19.019 M 250 58.021 C 230.342 60.252, 214.101 71.106, 205.029 88.078 C 201.967 93.808, 154.004 212.400, 154.001 214.250 C 154.001 214.662, 191.575 215, 237.500 215 L 321 215 321 136 L 321 57 288.750 57.142 C 271.012 57.220, 253.575 57.616, 250 58.021 M 360 135.929 L 360 215 497 215 C 572.350 215, 634 214.783, 634 214.517 C 634 212.918, 526.550 80.226, 520.600 74.478 C 512.708 66.853, 504.888 62.162, 495.500 59.421 C 490.127 57.852, 482.732 57.627, 424.750 57.264 L 360 56.858 360 135.929 M 118.500 254.980 C 105.215 256.544, 93.729 264.695, 88.321 276.395 L 85.500 282.500 85.225 357.250 L 84.951 432 105.007 432 C 120.178 432, 125.157 431.696, 125.451 430.750 C 125.665 430.063, 127.012 425.225, 128.444 420 C 135.359 394.777, 150.803 372.663, 173.152 355.984 C 202.509 334.076, 243.488 327.747, 279.253 339.597 C 308.392 349.252, 333.835 371.245, 347.972 399 C 350.735 404.424, 355.999 419.465, 358.033 427.750 L 359.077 432 439 432 L 518.923 432 519.967 427.750 C 521.898 419.884, 527.204 404.540, 529.735 399.500 C 546.461 366.194, 577.945 342.523, 615 335.393 C 625.945 333.287, 645.919 333.253, 656.500 335.322 C 681.772 340.264, 702.976 351.606, 720.549 369.582 C 733.985 383.328, 744.524 401.645, 749.556 420 C 750.988 425.225, 752.335 430.063, 752.549 430.750 C 752.843 431.697, 757.939 432, 773.575 432 L 794.213 432 793.734 397.750 C 793.237 362.303, 792.397 353.448, 788.080 338.183 C 779.654 308.388, 757.409 281.671, 729.272 267.552 C 714.293 260.035, 701.254 256.596, 681.500 254.949 C 668.671 253.880, 127.593 253.910, 118.500 254.980 M 225 374.427 C 208.121 378.179, 196.598 384.967, 184.369 398.363 C 177.477 405.912, 172.942 413.150, 168.937 422.991 C 164.818 433.111, 163.662 441.225, 164.249 455.893 C 164.684 466.759, 165.172 469.605, 167.782 476.500 C 173.458 491.498, 181.202 502.796, 191.897 511.688 C 200.450 518.798, 206.742 522.397, 216 525.474 C 246.574 535.634, 278.598 527.676, 299.568 504.706 C 332.003 469.178, 326.407 415.935, 287.172 386.781 C 274.603 377.441, 259.788 372.946, 242.090 373.102 C 235.716 373.159, 228.025 373.755, 225 374.427 M 616.021 375.008 C 584.882 383.410, 561.749 409.990, 557.960 441.722 C 553.822 476.380, 573.629 510.668, 605.439 523.910 C 613.333 527.197, 627.220 530.012, 635.381 529.980 C 648.078 529.931, 664.688 525.768, 674.239 520.242 C 681.086 516.280, 693.388 505.500, 697.807 499.590 C 722.450 466.628, 719.310 422.608, 690.340 394.918 C 679.317 384.381, 672.340 380.099, 659.500 375.986 C 649.168 372.676, 626.547 372.168, 616.021 375.008"
+                                                stroke="none" fill="#fff" fill-rule="evenodd" />
+                                        </svg> <br> 2 cocheras
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 pb-3  position-relative">
+                                <div class="container-models  img-gradient">
+                                    <img src="https://www.javer.com.mx/images/desarrollos/1691704904_Residenza-Javer-Premier-800x600px%20WEB.webp"
+                                        alt="Imagen">
+                                    <!-- <div class="badge bg-white position-absolute rounded-0">comentar
+                                    </div> -->
+                                    <h3 class="prototipo mb-3">JAVER PREMIERE 2</h3>
+                                </div>
+
+                                <div class="position-absolute card-txt">
+                                    <!-- <h3 class="ttl-proto mb-3">JAVER PREMIERE</h3> -->
+                                    <div class="recamaras">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 664 535"
+                                            version="1.1">
+                                            <path
+                                                d="M 146.215 37.940 C 123.426 44.455, 107.348 60.640, 99.728 84.734 C 97.631 91.366, 97.582 93.055, 97.244 170.236 L 96.900 248.972 91.360 253.736 C 83.857 260.190, 77.681 268.632, 72.541 279.461 C 64.846 295.676, 65 293.322, 65 394.372 L 65 483.704 67.253 487.048 C 73.596 496.460, 87.602 496.786, 94.395 487.679 C 96.399 484.993, 96.514 483.516, 96.795 456.929 L 97.089 429 327 429 L 556.911 429 557.205 456.929 C 557.486 483.516, 557.601 484.993, 559.605 487.679 C 566.398 496.786, 580.404 496.460, 586.747 487.048 L 589 483.704 589 394.372 C 589 315.274, 588.811 304.093, 587.346 296.770 C 584.273 281.402, 576.322 267.077, 564.482 255.578 L 557.102 248.410 556.740 169.955 C 556.339 82.884, 556.679 87.442, 549.475 72.500 C 543.318 59.730, 532.512 48.936, 519.504 42.564 C 505.138 35.527, 518.984 35.992, 326.356 36.071 C 162.164 36.139, 152.151 36.242, 146.215 37.940 M 155.344 69.033 C 145.672 70.966, 137.506 77.540, 133.134 86.914 C 130.580 92.388, 130.521 93.007, 130.164 117.755 L 129.800 143.010 136.107 140.027 C 149.024 133.918, 149.747 133.870, 223.010 134.259 C 283.228 134.579, 290.066 134.780, 295.500 136.394 C 304.424 139.043, 314.072 144.469, 320.986 150.725 L 327.132 156.287 331.316 152.331 C 339.662 144.441, 348.067 139.521, 358.554 136.388 C 363.934 134.781, 370.830 134.579, 430.990 134.259 C 504.174 133.871, 504.989 133.924, 517.793 139.980 L 524 142.915 523.988 120.208 C 523.976 97.015, 523.289 91.322, 519.654 84.297 C 517.135 79.427, 511.117 74.011, 505 71.109 L 499.500 68.500 329.500 68.351 C 236 68.269, 157.630 68.576, 155.344 69.033 M 150.357 169.082 C 144.183 171.456, 136.618 177.868, 134.049 182.904 C 131.021 188.838, 130 197.262, 130 216.297 L 130 234.227 133.250 233.466 C 135.037 233.048, 175.762 232.530, 223.750 232.316 L 311 231.927 310.980 216.714 C 310.946 190.775, 308.499 181.928, 299.265 174.361 C 289.951 166.729, 292.817 166.994, 220.239 167.052 C 158.208 167.102, 155.285 167.187, 150.357 169.082 M 363.282 169.096 C 357.262 171.427, 350.079 177.964, 347.080 183.843 C 344.206 189.477, 343.043 198.889, 343.020 216.709 L 343 231.918 430.750 232.292 C 479.013 232.498, 519.737 233.019, 521.250 233.450 L 524 234.233 524 215.666 C 524 196.555, 523.080 189.124, 519.949 182.932 C 517.762 178.607, 511.615 172.901, 505.795 169.793 L 501.500 167.500 435 167.288 C 370.400 167.082, 368.351 167.133, 363.282 169.096 M 139.951 266.051 C 127.756 267.869, 116.986 273.656, 109.621 282.349 C 104.809 288.028, 102.817 291.553, 99.692 299.913 C 97.709 305.218, 97.585 307.808, 97.230 351.250 L 96.857 397 327 397 L 557.143 397 556.770 351.250 C 556.416 307.904, 556.287 305.208, 554.322 299.952 C 550.684 290.226, 547.854 285.649, 541.836 279.761 C 535.685 273.742, 530.186 270.470, 521 267.363 C 515.722 265.578, 508.019 265.497, 330.500 265.363 C 228.750 265.286, 143.003 265.596, 139.951 266.051"
+                                                stroke="none" fill="#fff" fill-rule="evenodd" />
+                                        </svg> <br> 3 recamaras
+                                    </div>
+
+                                    <div class="banos">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 688 679"
+                                            version="1.1">
+                                            <path
+                                                d="M 127.238 23.110 C 115.775 25.020, 101.553 31.281, 92.751 38.292 C 85.694 43.913, 77.019 55.129, 72.480 64.500 C 64.636 80.695, 65 73.460, 65 212.958 L 65 337 53.750 337.006 C 40.930 337.012, 36.353 337.991, 31.995 341.658 C 27.431 345.498, 25.654 349.658, 25.654 356.500 C 25.654 365.861, 30.484 372.652, 38.781 374.956 C 43.970 376.397, 636.030 376.397, 641.219 374.956 C 649.516 372.652, 654.346 365.861, 654.346 356.500 C 654.346 347.139, 649.516 340.348, 641.219 338.044 C 638.704 337.345, 551.156 337.009, 370.750 337.006 L 104 337 104.015 214.250 C 104.031 86.165, 103.968 88.190, 108.198 80.500 C 110.923 75.547, 121.162 66.240, 126.500 63.864 C 130.301 62.173, 133.425 61.634, 139.524 61.619 C 146.451 61.603, 148.465 62.029, 154.258 64.740 C 159.918 67.389, 163.730 70.597, 178.635 85.256 L 196.303 102.632 192.743 109.066 C 186.211 120.869, 183.741 130.634, 183.274 146.500 C 182.906 158.994, 183.131 161.544, 185.362 170.206 C 189.331 185.614, 194.757 195.830, 207.108 211.154 L 209.248 213.809 206.414 217.524 C 202.438 222.737, 201.898 231.742, 205.218 237.458 C 208.144 242.497, 214.513 246.991, 219.718 247.689 C 228.603 248.881, 226.772 250.479, 298.279 179.131 C 345.485 132.029, 365.671 111.235, 367.150 108.184 C 371.450 99.314, 367.339 88.256, 357.852 83.173 C 351.859 79.962, 345.488 80.566, 339.295 84.931 L 334.741 88.141 331.621 85.214 C 315.240 69.845, 293.990 61.779, 270 61.826 C 254.882 61.855, 245.492 63.992, 233 70.245 L 224.500 74.500 205.500 55.943 C 185.214 36.129, 178.106 30.919, 165.306 26.477 C 153.108 22.244, 139.606 21.050, 127.238 23.110 M 255.579 103.103 C 248.356 105.587, 243.106 109.111, 235.913 116.304 C 229.415 122.803, 225.782 129.140, 223.476 138 C 219.871 151.851, 224.375 170.812, 233.928 182 L 236.917 185.500 271.975 150.500 L 307.034 115.500 303.767 112.717 C 291.695 102.434, 270.070 98.120, 255.579 103.103 M 65 452.331 C 65 483.806, 65.256 490.054, 66.912 499.081 C 71.598 524.615, 82.286 546.819, 98.530 564.770 L 104 570.815 104.044 603.157 C 104.097 642.415, 104.489 644.145, 114.490 649.249 C 121.920 653.041, 132.931 651.159, 138.345 645.173 C 142.123 640.995, 142.910 636.228, 142.956 617.250 C 142.980 607.212, 143.212 599, 143.471 599 C 143.731 599, 146.543 600.162, 149.721 601.582 C 158.439 605.476, 166.350 607.797, 178.425 610.004 C 189.030 611.942, 193.760 612, 340 612 C 486.240 612, 490.970 611.942, 501.575 610.004 C 513.729 607.783, 521.610 605.484, 530.374 601.602 C 533.605 600.171, 536.418 599, 536.624 599 C 536.831 599, 537.011 606.763, 537.024 616.250 C 537.057 640.221, 538.209 644.005, 546.962 648.893 C 554.538 653.124, 565.693 651.422, 571.345 645.173 C 575.519 640.557, 575.910 636.992, 575.956 603.157 L 576 570.815 581.470 564.770 C 597.498 547.059, 608.043 525.337, 613.157 499.500 C 614.829 491.056, 615.223 483.783, 615.691 452.750 L 616.245 416 596.123 416 L 576 416 576 449.369 C 576 484.782, 575.217 493.520, 570.835 507 C 561.099 536.952, 533.537 562.046, 501.377 570.239 L 492.500 572.500 340 572.500 L 187.500 572.500 178.623 570.239 C 146.568 562.073, 118.870 536.854, 109.165 507 C 104.783 493.520, 104 484.782, 104 449.369 L 104 416 84.500 416 L 65 416 65 452.331"
+                                                stroke="none" fill="#fff" fill-rule="evenodd" />
+                                        </svg> <br> 2.5 baños
+                                    </div>
+
+                                    <div class="cocheras">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 864 597"
+                                            version="1.1">
+                                            <path
+                                                d="M 243.847 19.019 C 211.030 22.951, 183.043 42.986, 167.744 73.500 C 165.813 77.350, 155.339 103, 144.467 130.500 C 133.595 158, 121.500 188.573, 117.589 198.439 L 110.478 216.378 103.735 218.080 C 82.038 223.556, 62.654 239.658, 53.026 260.204 C 45.381 276.517, 45.687 272.754, 45.263 355.706 C 45.028 401.793, 45.262 432.641, 45.882 437.113 C 48.075 452.940, 57.316 464.127, 72.472 469.301 C 74.137 469.869, 86.722 470.597, 100.438 470.917 L 125.376 471.500 127.102 478.346 C 140.587 531.833, 187.914 568.972, 242.619 568.996 C 266.238 569.006, 292.745 560.259, 311.538 546.252 C 320.863 539.301, 333.939 525.926, 339.683 517.463 C 347.363 506.148, 354.230 490.332, 358.011 475.250 L 359.077 471 439 471 L 518.923 471 519.989 475.250 C 523.949 491.045, 530.750 506.421, 539.188 518.659 C 545.369 527.624, 561.222 543.052, 570.690 549.316 C 606.093 572.741, 651.086 575.302, 689.300 556.068 C 719.694 540.770, 742.375 512.151, 750.898 478.346 L 752.624 471.500 777.562 470.957 C 796.649 470.542, 803.476 470.049, 806.659 468.856 C 818.101 464.567, 825.847 457.104, 830.119 446.252 C 832.266 440.798, 832.404 438.861, 832.785 408.848 C 833.478 354.288, 830.209 332.133, 817.501 305.252 C 799.128 266.389, 764.641 236.229, 723.505 223.052 C 714.643 220.214, 699.871 216.924, 689.699 215.523 L 684.897 214.862 619.657 133.181 C 580.891 84.646, 551.796 49.112, 547.958 45.616 C 537.029 35.659, 522.327 26.975, 510.500 23.490 C 493.137 18.374, 501.061 18.662, 371.500 18.434 C 304.950 18.317, 247.506 18.580, 243.847 19.019 M 250 58.021 C 230.342 60.252, 214.101 71.106, 205.029 88.078 C 201.967 93.808, 154.004 212.400, 154.001 214.250 C 154.001 214.662, 191.575 215, 237.500 215 L 321 215 321 136 L 321 57 288.750 57.142 C 271.012 57.220, 253.575 57.616, 250 58.021 M 360 135.929 L 360 215 497 215 C 572.350 215, 634 214.783, 634 214.517 C 634 212.918, 526.550 80.226, 520.600 74.478 C 512.708 66.853, 504.888 62.162, 495.500 59.421 C 490.127 57.852, 482.732 57.627, 424.750 57.264 L 360 56.858 360 135.929 M 118.500 254.980 C 105.215 256.544, 93.729 264.695, 88.321 276.395 L 85.500 282.500 85.225 357.250 L 84.951 432 105.007 432 C 120.178 432, 125.157 431.696, 125.451 430.750 C 125.665 430.063, 127.012 425.225, 128.444 420 C 135.359 394.777, 150.803 372.663, 173.152 355.984 C 202.509 334.076, 243.488 327.747, 279.253 339.597 C 308.392 349.252, 333.835 371.245, 347.972 399 C 350.735 404.424, 355.999 419.465, 358.033 427.750 L 359.077 432 439 432 L 518.923 432 519.967 427.750 C 521.898 419.884, 527.204 404.540, 529.735 399.500 C 546.461 366.194, 577.945 342.523, 615 335.393 C 625.945 333.287, 645.919 333.253, 656.500 335.322 C 681.772 340.264, 702.976 351.606, 720.549 369.582 C 733.985 383.328, 744.524 401.645, 749.556 420 C 750.988 425.225, 752.335 430.063, 752.549 430.750 C 752.843 431.697, 757.939 432, 773.575 432 L 794.213 432 793.734 397.750 C 793.237 362.303, 792.397 353.448, 788.080 338.183 C 779.654 308.388, 757.409 281.671, 729.272 267.552 C 714.293 260.035, 701.254 256.596, 681.500 254.949 C 668.671 253.880, 127.593 253.910, 118.500 254.980 M 225 374.427 C 208.121 378.179, 196.598 384.967, 184.369 398.363 C 177.477 405.912, 172.942 413.150, 168.937 422.991 C 164.818 433.111, 163.662 441.225, 164.249 455.893 C 164.684 466.759, 165.172 469.605, 167.782 476.500 C 173.458 491.498, 181.202 502.796, 191.897 511.688 C 200.450 518.798, 206.742 522.397, 216 525.474 C 246.574 535.634, 278.598 527.676, 299.568 504.706 C 332.003 469.178, 326.407 415.935, 287.172 386.781 C 274.603 377.441, 259.788 372.946, 242.090 373.102 C 235.716 373.159, 228.025 373.755, 225 374.427 M 616.021 375.008 C 584.882 383.410, 561.749 409.990, 557.960 441.722 C 553.822 476.380, 573.629 510.668, 605.439 523.910 C 613.333 527.197, 627.220 530.012, 635.381 529.980 C 648.078 529.931, 664.688 525.768, 674.239 520.242 C 681.086 516.280, 693.388 505.500, 697.807 499.590 C 722.450 466.628, 719.310 422.608, 690.340 394.918 C 679.317 384.381, 672.340 380.099, 659.500 375.986 C 649.168 372.676, 626.547 372.168, 616.021 375.008"
+                                                stroke="none" fill="#fff" fill-rule="evenodd" />
+                                        </svg> <br> 2 cocheras
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 pb-3  position-relative">
+                                <div class="container-models  img-gradient">
+                                    <img src="https://www.javer.com.mx/images/desarrollos/1691704904_Residenza-Javer-Premier-800x600px%20WEB.webp"
+                                        alt="Imagen">
+                                    <!-- <div class="badge bg-white position-absolute rounded-0">comentar
+                                    </div>
+                                    <h3 class="prototipo mb-3">JAVER PREMIERE</h3> -->
+                                </div>
+
+                                <div class="position-absolute card-txt">
+                                    <h3 class="ttl-proto3 mb-3">JAVER PREMIERE 3</h3>
+                                    <div class="recamaras">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 664 535"
+                                            version="1.1">
+                                            <path
+                                                d="M 146.215 37.940 C 123.426 44.455, 107.348 60.640, 99.728 84.734 C 97.631 91.366, 97.582 93.055, 97.244 170.236 L 96.900 248.972 91.360 253.736 C 83.857 260.190, 77.681 268.632, 72.541 279.461 C 64.846 295.676, 65 293.322, 65 394.372 L 65 483.704 67.253 487.048 C 73.596 496.460, 87.602 496.786, 94.395 487.679 C 96.399 484.993, 96.514 483.516, 96.795 456.929 L 97.089 429 327 429 L 556.911 429 557.205 456.929 C 557.486 483.516, 557.601 484.993, 559.605 487.679 C 566.398 496.786, 580.404 496.460, 586.747 487.048 L 589 483.704 589 394.372 C 589 315.274, 588.811 304.093, 587.346 296.770 C 584.273 281.402, 576.322 267.077, 564.482 255.578 L 557.102 248.410 556.740 169.955 C 556.339 82.884, 556.679 87.442, 549.475 72.500 C 543.318 59.730, 532.512 48.936, 519.504 42.564 C 505.138 35.527, 518.984 35.992, 326.356 36.071 C 162.164 36.139, 152.151 36.242, 146.215 37.940 M 155.344 69.033 C 145.672 70.966, 137.506 77.540, 133.134 86.914 C 130.580 92.388, 130.521 93.007, 130.164 117.755 L 129.800 143.010 136.107 140.027 C 149.024 133.918, 149.747 133.870, 223.010 134.259 C 283.228 134.579, 290.066 134.780, 295.500 136.394 C 304.424 139.043, 314.072 144.469, 320.986 150.725 L 327.132 156.287 331.316 152.331 C 339.662 144.441, 348.067 139.521, 358.554 136.388 C 363.934 134.781, 370.830 134.579, 430.990 134.259 C 504.174 133.871, 504.989 133.924, 517.793 139.980 L 524 142.915 523.988 120.208 C 523.976 97.015, 523.289 91.322, 519.654 84.297 C 517.135 79.427, 511.117 74.011, 505 71.109 L 499.500 68.500 329.500 68.351 C 236 68.269, 157.630 68.576, 155.344 69.033 M 150.357 169.082 C 144.183 171.456, 136.618 177.868, 134.049 182.904 C 131.021 188.838, 130 197.262, 130 216.297 L 130 234.227 133.250 233.466 C 135.037 233.048, 175.762 232.530, 223.750 232.316 L 311 231.927 310.980 216.714 C 310.946 190.775, 308.499 181.928, 299.265 174.361 C 289.951 166.729, 292.817 166.994, 220.239 167.052 C 158.208 167.102, 155.285 167.187, 150.357 169.082 M 363.282 169.096 C 357.262 171.427, 350.079 177.964, 347.080 183.843 C 344.206 189.477, 343.043 198.889, 343.020 216.709 L 343 231.918 430.750 232.292 C 479.013 232.498, 519.737 233.019, 521.250 233.450 L 524 234.233 524 215.666 C 524 196.555, 523.080 189.124, 519.949 182.932 C 517.762 178.607, 511.615 172.901, 505.795 169.793 L 501.500 167.500 435 167.288 C 370.400 167.082, 368.351 167.133, 363.282 169.096 M 139.951 266.051 C 127.756 267.869, 116.986 273.656, 109.621 282.349 C 104.809 288.028, 102.817 291.553, 99.692 299.913 C 97.709 305.218, 97.585 307.808, 97.230 351.250 L 96.857 397 327 397 L 557.143 397 556.770 351.250 C 556.416 307.904, 556.287 305.208, 554.322 299.952 C 550.684 290.226, 547.854 285.649, 541.836 279.761 C 535.685 273.742, 530.186 270.470, 521 267.363 C 515.722 265.578, 508.019 265.497, 330.500 265.363 C 228.750 265.286, 143.003 265.596, 139.951 266.051"
+                                                stroke="none" fill="#fff" fill-rule="evenodd" />
+                                        </svg> <br> 3 recamaras
+                                    </div>
+
+                                    <div class="banos">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 688 679"
+                                            version="1.1">
+                                            <path
+                                                d="M 127.238 23.110 C 115.775 25.020, 101.553 31.281, 92.751 38.292 C 85.694 43.913, 77.019 55.129, 72.480 64.500 C 64.636 80.695, 65 73.460, 65 212.958 L 65 337 53.750 337.006 C 40.930 337.012, 36.353 337.991, 31.995 341.658 C 27.431 345.498, 25.654 349.658, 25.654 356.500 C 25.654 365.861, 30.484 372.652, 38.781 374.956 C 43.970 376.397, 636.030 376.397, 641.219 374.956 C 649.516 372.652, 654.346 365.861, 654.346 356.500 C 654.346 347.139, 649.516 340.348, 641.219 338.044 C 638.704 337.345, 551.156 337.009, 370.750 337.006 L 104 337 104.015 214.250 C 104.031 86.165, 103.968 88.190, 108.198 80.500 C 110.923 75.547, 121.162 66.240, 126.500 63.864 C 130.301 62.173, 133.425 61.634, 139.524 61.619 C 146.451 61.603, 148.465 62.029, 154.258 64.740 C 159.918 67.389, 163.730 70.597, 178.635 85.256 L 196.303 102.632 192.743 109.066 C 186.211 120.869, 183.741 130.634, 183.274 146.500 C 182.906 158.994, 183.131 161.544, 185.362 170.206 C 189.331 185.614, 194.757 195.830, 207.108 211.154 L 209.248 213.809 206.414 217.524 C 202.438 222.737, 201.898 231.742, 205.218 237.458 C 208.144 242.497, 214.513 246.991, 219.718 247.689 C 228.603 248.881, 226.772 250.479, 298.279 179.131 C 345.485 132.029, 365.671 111.235, 367.150 108.184 C 371.450 99.314, 367.339 88.256, 357.852 83.173 C 351.859 79.962, 345.488 80.566, 339.295 84.931 L 334.741 88.141 331.621 85.214 C 315.240 69.845, 293.990 61.779, 270 61.826 C 254.882 61.855, 245.492 63.992, 233 70.245 L 224.500 74.500 205.500 55.943 C 185.214 36.129, 178.106 30.919, 165.306 26.477 C 153.108 22.244, 139.606 21.050, 127.238 23.110 M 255.579 103.103 C 248.356 105.587, 243.106 109.111, 235.913 116.304 C 229.415 122.803, 225.782 129.140, 223.476 138 C 219.871 151.851, 224.375 170.812, 233.928 182 L 236.917 185.500 271.975 150.500 L 307.034 115.500 303.767 112.717 C 291.695 102.434, 270.070 98.120, 255.579 103.103 M 65 452.331 C 65 483.806, 65.256 490.054, 66.912 499.081 C 71.598 524.615, 82.286 546.819, 98.530 564.770 L 104 570.815 104.044 603.157 C 104.097 642.415, 104.489 644.145, 114.490 649.249 C 121.920 653.041, 132.931 651.159, 138.345 645.173 C 142.123 640.995, 142.910 636.228, 142.956 617.250 C 142.980 607.212, 143.212 599, 143.471 599 C 143.731 599, 146.543 600.162, 149.721 601.582 C 158.439 605.476, 166.350 607.797, 178.425 610.004 C 189.030 611.942, 193.760 612, 340 612 C 486.240 612, 490.970 611.942, 501.575 610.004 C 513.729 607.783, 521.610 605.484, 530.374 601.602 C 533.605 600.171, 536.418 599, 536.624 599 C 536.831 599, 537.011 606.763, 537.024 616.250 C 537.057 640.221, 538.209 644.005, 546.962 648.893 C 554.538 653.124, 565.693 651.422, 571.345 645.173 C 575.519 640.557, 575.910 636.992, 575.956 603.157 L 576 570.815 581.470 564.770 C 597.498 547.059, 608.043 525.337, 613.157 499.500 C 614.829 491.056, 615.223 483.783, 615.691 452.750 L 616.245 416 596.123 416 L 576 416 576 449.369 C 576 484.782, 575.217 493.520, 570.835 507 C 561.099 536.952, 533.537 562.046, 501.377 570.239 L 492.500 572.500 340 572.500 L 187.500 572.500 178.623 570.239 C 146.568 562.073, 118.870 536.854, 109.165 507 C 104.783 493.520, 104 484.782, 104 449.369 L 104 416 84.500 416 L 65 416 65 452.331"
+                                                stroke="none" fill="#fff" fill-rule="evenodd" />
+                                        </svg> <br> 2.5 baños
+                                    </div>
+
+                                    <div class="cocheras">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 864 597"
+                                            version="1.1">
+                                            <path
+                                                d="M 243.847 19.019 C 211.030 22.951, 183.043 42.986, 167.744 73.500 C 165.813 77.350, 155.339 103, 144.467 130.500 C 133.595 158, 121.500 188.573, 117.589 198.439 L 110.478 216.378 103.735 218.080 C 82.038 223.556, 62.654 239.658, 53.026 260.204 C 45.381 276.517, 45.687 272.754, 45.263 355.706 C 45.028 401.793, 45.262 432.641, 45.882 437.113 C 48.075 452.940, 57.316 464.127, 72.472 469.301 C 74.137 469.869, 86.722 470.597, 100.438 470.917 L 125.376 471.500 127.102 478.346 C 140.587 531.833, 187.914 568.972, 242.619 568.996 C 266.238 569.006, 292.745 560.259, 311.538 546.252 C 320.863 539.301, 333.939 525.926, 339.683 517.463 C 347.363 506.148, 354.230 490.332, 358.011 475.250 L 359.077 471 439 471 L 518.923 471 519.989 475.250 C 523.949 491.045, 530.750 506.421, 539.188 518.659 C 545.369 527.624, 561.222 543.052, 570.690 549.316 C 606.093 572.741, 651.086 575.302, 689.300 556.068 C 719.694 540.770, 742.375 512.151, 750.898 478.346 L 752.624 471.500 777.562 470.957 C 796.649 470.542, 803.476 470.049, 806.659 468.856 C 818.101 464.567, 825.847 457.104, 830.119 446.252 C 832.266 440.798, 832.404 438.861, 832.785 408.848 C 833.478 354.288, 830.209 332.133, 817.501 305.252 C 799.128 266.389, 764.641 236.229, 723.505 223.052 C 714.643 220.214, 699.871 216.924, 689.699 215.523 L 684.897 214.862 619.657 133.181 C 580.891 84.646, 551.796 49.112, 547.958 45.616 C 537.029 35.659, 522.327 26.975, 510.500 23.490 C 493.137 18.374, 501.061 18.662, 371.500 18.434 C 304.950 18.317, 247.506 18.580, 243.847 19.019 M 250 58.021 C 230.342 60.252, 214.101 71.106, 205.029 88.078 C 201.967 93.808, 154.004 212.400, 154.001 214.250 C 154.001 214.662, 191.575 215, 237.500 215 L 321 215 321 136 L 321 57 288.750 57.142 C 271.012 57.220, 253.575 57.616, 250 58.021 M 360 135.929 L 360 215 497 215 C 572.350 215, 634 214.783, 634 214.517 C 634 212.918, 526.550 80.226, 520.600 74.478 C 512.708 66.853, 504.888 62.162, 495.500 59.421 C 490.127 57.852, 482.732 57.627, 424.750 57.264 L 360 56.858 360 135.929 M 118.500 254.980 C 105.215 256.544, 93.729 264.695, 88.321 276.395 L 85.500 282.500 85.225 357.250 L 84.951 432 105.007 432 C 120.178 432, 125.157 431.696, 125.451 430.750 C 125.665 430.063, 127.012 425.225, 128.444 420 C 135.359 394.777, 150.803 372.663, 173.152 355.984 C 202.509 334.076, 243.488 327.747, 279.253 339.597 C 308.392 349.252, 333.835 371.245, 347.972 399 C 350.735 404.424, 355.999 419.465, 358.033 427.750 L 359.077 432 439 432 L 518.923 432 519.967 427.750 C 521.898 419.884, 527.204 404.540, 529.735 399.500 C 546.461 366.194, 577.945 342.523, 615 335.393 C 625.945 333.287, 645.919 333.253, 656.500 335.322 C 681.772 340.264, 702.976 351.606, 720.549 369.582 C 733.985 383.328, 744.524 401.645, 749.556 420 C 750.988 425.225, 752.335 430.063, 752.549 430.750 C 752.843 431.697, 757.939 432, 773.575 432 L 794.213 432 793.734 397.750 C 793.237 362.303, 792.397 353.448, 788.080 338.183 C 779.654 308.388, 757.409 281.671, 729.272 267.552 C 714.293 260.035, 701.254 256.596, 681.500 254.949 C 668.671 253.880, 127.593 253.910, 118.500 254.980 M 225 374.427 C 208.121 378.179, 196.598 384.967, 184.369 398.363 C 177.477 405.912, 172.942 413.150, 168.937 422.991 C 164.818 433.111, 163.662 441.225, 164.249 455.893 C 164.684 466.759, 165.172 469.605, 167.782 476.500 C 173.458 491.498, 181.202 502.796, 191.897 511.688 C 200.450 518.798, 206.742 522.397, 216 525.474 C 246.574 535.634, 278.598 527.676, 299.568 504.706 C 332.003 469.178, 326.407 415.935, 287.172 386.781 C 274.603 377.441, 259.788 372.946, 242.090 373.102 C 235.716 373.159, 228.025 373.755, 225 374.427 M 616.021 375.008 C 584.882 383.410, 561.749 409.990, 557.960 441.722 C 553.822 476.380, 573.629 510.668, 605.439 523.910 C 613.333 527.197, 627.220 530.012, 635.381 529.980 C 648.078 529.931, 664.688 525.768, 674.239 520.242 C 681.086 516.280, 693.388 505.500, 697.807 499.590 C 722.450 466.628, 719.310 422.608, 690.340 394.918 C 679.317 384.381, 672.340 380.099, 659.500 375.986 C 649.168 372.676, 626.547 372.168, 616.021 375.008"
+                                                stroke="none" fill="#fff" fill-rule="evenodd" />
+                                        </svg> <br> 2 cocheras
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 pb-3  position-relative">
+                                <div class="card text-white">
+                                    <img src="https://www.javer.com.mx/images/desarrollos/1691704904_Residenza-Javer-Premier-800x600px%20WEB.webp"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">JAVER PREMIERE 4</h5>
+                                        <div class="position-absolute card-txt">
+                                            <h5>JAVER PREMIERE 5</h5>
+                                            <div class="recamaras">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 664 535"
+                                                    version="1.1">
+                                                    <path
+                                                        d="M 146.215 37.940 C 123.426 44.455, 107.348 60.640, 99.728 84.734 C 97.631 91.366, 97.582 93.055, 97.244 170.236 L 96.900 248.972 91.360 253.736 C 83.857 260.190, 77.681 268.632, 72.541 279.461 C 64.846 295.676, 65 293.322, 65 394.372 L 65 483.704 67.253 487.048 C 73.596 496.460, 87.602 496.786, 94.395 487.679 C 96.399 484.993, 96.514 483.516, 96.795 456.929 L 97.089 429 327 429 L 556.911 429 557.205 456.929 C 557.486 483.516, 557.601 484.993, 559.605 487.679 C 566.398 496.786, 580.404 496.460, 586.747 487.048 L 589 483.704 589 394.372 C 589 315.274, 588.811 304.093, 587.346 296.770 C 584.273 281.402, 576.322 267.077, 564.482 255.578 L 557.102 248.410 556.740 169.955 C 556.339 82.884, 556.679 87.442, 549.475 72.500 C 543.318 59.730, 532.512 48.936, 519.504 42.564 C 505.138 35.527, 518.984 35.992, 326.356 36.071 C 162.164 36.139, 152.151 36.242, 146.215 37.940 M 155.344 69.033 C 145.672 70.966, 137.506 77.540, 133.134 86.914 C 130.580 92.388, 130.521 93.007, 130.164 117.755 L 129.800 143.010 136.107 140.027 C 149.024 133.918, 149.747 133.870, 223.010 134.259 C 283.228 134.579, 290.066 134.780, 295.500 136.394 C 304.424 139.043, 314.072 144.469, 320.986 150.725 L 327.132 156.287 331.316 152.331 C 339.662 144.441, 348.067 139.521, 358.554 136.388 C 363.934 134.781, 370.830 134.579, 430.990 134.259 C 504.174 133.871, 504.989 133.924, 517.793 139.980 L 524 142.915 523.988 120.208 C 523.976 97.015, 523.289 91.322, 519.654 84.297 C 517.135 79.427, 511.117 74.011, 505 71.109 L 499.500 68.500 329.500 68.351 C 236 68.269, 157.630 68.576, 155.344 69.033 M 150.357 169.082 C 144.183 171.456, 136.618 177.868, 134.049 182.904 C 131.021 188.838, 130 197.262, 130 216.297 L 130 234.227 133.250 233.466 C 135.037 233.048, 175.762 232.530, 223.750 232.316 L 311 231.927 310.980 216.714 C 310.946 190.775, 308.499 181.928, 299.265 174.361 C 289.951 166.729, 292.817 166.994, 220.239 167.052 C 158.208 167.102, 155.285 167.187, 150.357 169.082 M 363.282 169.096 C 357.262 171.427, 350.079 177.964, 347.080 183.843 C 344.206 189.477, 343.043 198.889, 343.020 216.709 L 343 231.918 430.750 232.292 C 479.013 232.498, 519.737 233.019, 521.250 233.450 L 524 234.233 524 215.666 C 524 196.555, 523.080 189.124, 519.949 182.932 C 517.762 178.607, 511.615 172.901, 505.795 169.793 L 501.500 167.500 435 167.288 C 370.400 167.082, 368.351 167.133, 363.282 169.096 M 139.951 266.051 C 127.756 267.869, 116.986 273.656, 109.621 282.349 C 104.809 288.028, 102.817 291.553, 99.692 299.913 C 97.709 305.218, 97.585 307.808, 97.230 351.250 L 96.857 397 327 397 L 557.143 397 556.770 351.250 C 556.416 307.904, 556.287 305.208, 554.322 299.952 C 550.684 290.226, 547.854 285.649, 541.836 279.761 C 535.685 273.742, 530.186 270.470, 521 267.363 C 515.722 265.578, 508.019 265.497, 330.500 265.363 C 228.750 265.286, 143.003 265.596, 139.951 266.051"
+                                                        stroke="none" fill="#fff" fill-rule="evenodd"></path>
+                                                </svg> <br> 3 recamaras
+                                            </div>
+
+                                            <div class="banos">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 688 679"
+                                                    version="1.1">
+                                                    <path
+                                                        d="M 127.238 23.110 C 115.775 25.020, 101.553 31.281, 92.751 38.292 C 85.694 43.913, 77.019 55.129, 72.480 64.500 C 64.636 80.695, 65 73.460, 65 212.958 L 65 337 53.750 337.006 C 40.930 337.012, 36.353 337.991, 31.995 341.658 C 27.431 345.498, 25.654 349.658, 25.654 356.500 C 25.654 365.861, 30.484 372.652, 38.781 374.956 C 43.970 376.397, 636.030 376.397, 641.219 374.956 C 649.516 372.652, 654.346 365.861, 654.346 356.500 C 654.346 347.139, 649.516 340.348, 641.219 338.044 C 638.704 337.345, 551.156 337.009, 370.750 337.006 L 104 337 104.015 214.250 C 104.031 86.165, 103.968 88.190, 108.198 80.500 C 110.923 75.547, 121.162 66.240, 126.500 63.864 C 130.301 62.173, 133.425 61.634, 139.524 61.619 C 146.451 61.603, 148.465 62.029, 154.258 64.740 C 159.918 67.389, 163.730 70.597, 178.635 85.256 L 196.303 102.632 192.743 109.066 C 186.211 120.869, 183.741 130.634, 183.274 146.500 C 182.906 158.994, 183.131 161.544, 185.362 170.206 C 189.331 185.614, 194.757 195.830, 207.108 211.154 L 209.248 213.809 206.414 217.524 C 202.438 222.737, 201.898 231.742, 205.218 237.458 C 208.144 242.497, 214.513 246.991, 219.718 247.689 C 228.603 248.881, 226.772 250.479, 298.279 179.131 C 345.485 132.029, 365.671 111.235, 367.150 108.184 C 371.450 99.314, 367.339 88.256, 357.852 83.173 C 351.859 79.962, 345.488 80.566, 339.295 84.931 L 334.741 88.141 331.621 85.214 C 315.240 69.845, 293.990 61.779, 270 61.826 C 254.882 61.855, 245.492 63.992, 233 70.245 L 224.500 74.500 205.500 55.943 C 185.214 36.129, 178.106 30.919, 165.306 26.477 C 153.108 22.244, 139.606 21.050, 127.238 23.110 M 255.579 103.103 C 248.356 105.587, 243.106 109.111, 235.913 116.304 C 229.415 122.803, 225.782 129.140, 223.476 138 C 219.871 151.851, 224.375 170.812, 233.928 182 L 236.917 185.500 271.975 150.500 L 307.034 115.500 303.767 112.717 C 291.695 102.434, 270.070 98.120, 255.579 103.103 M 65 452.331 C 65 483.806, 65.256 490.054, 66.912 499.081 C 71.598 524.615, 82.286 546.819, 98.530 564.770 L 104 570.815 104.044 603.157 C 104.097 642.415, 104.489 644.145, 114.490 649.249 C 121.920 653.041, 132.931 651.159, 138.345 645.173 C 142.123 640.995, 142.910 636.228, 142.956 617.250 C 142.980 607.212, 143.212 599, 143.471 599 C 143.731 599, 146.543 600.162, 149.721 601.582 C 158.439 605.476, 166.350 607.797, 178.425 610.004 C 189.030 611.942, 193.760 612, 340 612 C 486.240 612, 490.970 611.942, 501.575 610.004 C 513.729 607.783, 521.610 605.484, 530.374 601.602 C 533.605 600.171, 536.418 599, 536.624 599 C 536.831 599, 537.011 606.763, 537.024 616.250 C 537.057 640.221, 538.209 644.005, 546.962 648.893 C 554.538 653.124, 565.693 651.422, 571.345 645.173 C 575.519 640.557, 575.910 636.992, 575.956 603.157 L 576 570.815 581.470 564.770 C 597.498 547.059, 608.043 525.337, 613.157 499.500 C 614.829 491.056, 615.223 483.783, 615.691 452.750 L 616.245 416 596.123 416 L 576 416 576 449.369 C 576 484.782, 575.217 493.520, 570.835 507 C 561.099 536.952, 533.537 562.046, 501.377 570.239 L 492.500 572.500 340 572.500 L 187.500 572.500 178.623 570.239 C 146.568 562.073, 118.870 536.854, 109.165 507 C 104.783 493.520, 104 484.782, 104 449.369 L 104 416 84.500 416 L 65 416 65 452.331"
+                                                        stroke="none" fill="#fff" fill-rule="evenodd"></path>
+                                                </svg> <br> 2.5 baños
+                                            </div>
+
+                                            <div class="cocheras">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 864 597"
+                                                    version="1.1">
+                                                    <path
+                                                        d="M 243.847 19.019 C 211.030 22.951, 183.043 42.986, 167.744 73.500 C 165.813 77.350, 155.339 103, 144.467 130.500 C 133.595 158, 121.500 188.573, 117.589 198.439 L 110.478 216.378 103.735 218.080 C 82.038 223.556, 62.654 239.658, 53.026 260.204 C 45.381 276.517, 45.687 272.754, 45.263 355.706 C 45.028 401.793, 45.262 432.641, 45.882 437.113 C 48.075 452.940, 57.316 464.127, 72.472 469.301 C 74.137 469.869, 86.722 470.597, 100.438 470.917 L 125.376 471.500 127.102 478.346 C 140.587 531.833, 187.914 568.972, 242.619 568.996 C 266.238 569.006, 292.745 560.259, 311.538 546.252 C 320.863 539.301, 333.939 525.926, 339.683 517.463 C 347.363 506.148, 354.230 490.332, 358.011 475.250 L 359.077 471 439 471 L 518.923 471 519.989 475.250 C 523.949 491.045, 530.750 506.421, 539.188 518.659 C 545.369 527.624, 561.222 543.052, 570.690 549.316 C 606.093 572.741, 651.086 575.302, 689.300 556.068 C 719.694 540.770, 742.375 512.151, 750.898 478.346 L 752.624 471.500 777.562 470.957 C 796.649 470.542, 803.476 470.049, 806.659 468.856 C 818.101 464.567, 825.847 457.104, 830.119 446.252 C 832.266 440.798, 832.404 438.861, 832.785 408.848 C 833.478 354.288, 830.209 332.133, 817.501 305.252 C 799.128 266.389, 764.641 236.229, 723.505 223.052 C 714.643 220.214, 699.871 216.924, 689.699 215.523 L 684.897 214.862 619.657 133.181 C 580.891 84.646, 551.796 49.112, 547.958 45.616 C 537.029 35.659, 522.327 26.975, 510.500 23.490 C 493.137 18.374, 501.061 18.662, 371.500 18.434 C 304.950 18.317, 247.506 18.580, 243.847 19.019 M 250 58.021 C 230.342 60.252, 214.101 71.106, 205.029 88.078 C 201.967 93.808, 154.004 212.400, 154.001 214.250 C 154.001 214.662, 191.575 215, 237.500 215 L 321 215 321 136 L 321 57 288.750 57.142 C 271.012 57.220, 253.575 57.616, 250 58.021 M 360 135.929 L 360 215 497 215 C 572.350 215, 634 214.783, 634 214.517 C 634 212.918, 526.550 80.226, 520.600 74.478 C 512.708 66.853, 504.888 62.162, 495.500 59.421 C 490.127 57.852, 482.732 57.627, 424.750 57.264 L 360 56.858 360 135.929 M 118.500 254.980 C 105.215 256.544, 93.729 264.695, 88.321 276.395 L 85.500 282.500 85.225 357.250 L 84.951 432 105.007 432 C 120.178 432, 125.157 431.696, 125.451 430.750 C 125.665 430.063, 127.012 425.225, 128.444 420 C 135.359 394.777, 150.803 372.663, 173.152 355.984 C 202.509 334.076, 243.488 327.747, 279.253 339.597 C 308.392 349.252, 333.835 371.245, 347.972 399 C 350.735 404.424, 355.999 419.465, 358.033 427.750 L 359.077 432 439 432 L 518.923 432 519.967 427.750 C 521.898 419.884, 527.204 404.540, 529.735 399.500 C 546.461 366.194, 577.945 342.523, 615 335.393 C 625.945 333.287, 645.919 333.253, 656.500 335.322 C 681.772 340.264, 702.976 351.606, 720.549 369.582 C 733.985 383.328, 744.524 401.645, 749.556 420 C 750.988 425.225, 752.335 430.063, 752.549 430.750 C 752.843 431.697, 757.939 432, 773.575 432 L 794.213 432 793.734 397.750 C 793.237 362.303, 792.397 353.448, 788.080 338.183 C 779.654 308.388, 757.409 281.671, 729.272 267.552 C 714.293 260.035, 701.254 256.596, 681.500 254.949 C 668.671 253.880, 127.593 253.910, 118.500 254.980 M 225 374.427 C 208.121 378.179, 196.598 384.967, 184.369 398.363 C 177.477 405.912, 172.942 413.150, 168.937 422.991 C 164.818 433.111, 163.662 441.225, 164.249 455.893 C 164.684 466.759, 165.172 469.605, 167.782 476.500 C 173.458 491.498, 181.202 502.796, 191.897 511.688 C 200.450 518.798, 206.742 522.397, 216 525.474 C 246.574 535.634, 278.598 527.676, 299.568 504.706 C 332.003 469.178, 326.407 415.935, 287.172 386.781 C 274.603 377.441, 259.788 372.946, 242.090 373.102 C 235.716 373.159, 228.025 373.755, 225 374.427 M 616.021 375.008 C 584.882 383.410, 561.749 409.990, 557.960 441.722 C 553.822 476.380, 573.629 510.668, 605.439 523.910 C 613.333 527.197, 627.220 530.012, 635.381 529.980 C 648.078 529.931, 664.688 525.768, 674.239 520.242 C 681.086 516.280, 693.388 505.500, 697.807 499.590 C 722.450 466.628, 719.310 422.608, 690.340 394.918 C 679.317 384.381, 672.340 380.099, 659.500 375.986 C 649.168 372.676, 626.547 372.168, 616.021 375.008"
+                                                        stroke="none" fill="#fff" fill-rule="evenodd"></path>
+                                                </svg> <br> 2 cocheras
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+                    <hr>
+                    <section class="row pb-5 pt-5 ">
+                        <div class="row text-center col-12 pb-4">
+                            <h2 class="subtitulos">Detalles del desarrollo</h2>
+                        </div>
+                        <article class="col-12 col-lg-6 mb-5 text-xs-center text-sm-left text-lg-left">
+
+
+                            <p class="mb-4"> <strong class="fw-bold">Tipos de crédito:</strong>
+                            <ul style="list-style-type: none;" class="p-0">
+                                <li>• Infonavit</li>
+                                <li>• Cofinavit</li>
+                                <li>• Bancarios</li>
+                                <li>• Fovissste</li>
+                                <li>• Fovissste para todos</li>
+                            </ul>
+                            </p>
+                            <!-- Button trigger modal -->
+                            <!-- <button style="background-color: #c10d19;" type="button" class="btn text-white mb-5"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                                </svg> LISTA DE PRECIOS
+                            </button> -->
+
+
+
+                            <!-- Modal -->
+                            <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Lista de Precios</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="w-100"
+                                                src="https://www.javer.com.mx/images/files/desarrollos/brochures/1690860730_Residenza%20Agosto%202023.png"
+                                                alt="">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </article>
+                        <article class="col-12 col-lg-6 ">
+                            <p class="mb-4"> <strong class="fw-bold">Ubicación:</strong> Vialidad Mexiquense No. 90,
+                                Lote 3
+                                Col. San Francisco Coacalco, Coacalco, Estado De México
+                                C.P. 55710</p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7515.21397653629!2d-99.1132618!3d19.644093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f505ffc052f3%3A0x4d89c90227a49047!2sResidenza%20Privadas%204%20%2F%20Javer!5e0!3m2!1ses-419!2smx!4v1692125392817!5m2!1ses-419!2smx"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </article>
+                    </section>
+                    <section class="text-center pt-5 pb-5">
+                        <a href="#title_frm" class="btn letter-spacing-2 px-3 py-3 text-white mt-3 mt-sm-0"
+                            style=" background-color: #c10d19;">CONTACTA A UN ASESOR <svg
+                                xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 670 562" version="1.1" style="
+                            /* display: inline-block; */
+                            margin-top: 0px;
+                            transform: rotate(270deg);
+                            ">
+                                <path
+                                    d="M 401.500 61.362 C 393.126 63.505, 389.996 65.736, 376.738 79.021 C 361.209 94.583, 358.544 99.285, 358.604 111.020 C 358.678 125.579, 356.165 122.543, 426.270 192.740 L 488.428 254.980 291.464 255.240 L 94.500 255.500 90 257.834 C 84.010 260.941, 77.832 267.068, 74.894 272.817 C 72.588 277.327, 72.500 278.292, 72.500 299 C 72.500 320.165, 72.541 320.588, 75.148 326.148 C 78.374 333.029, 84.005 338.843, 90.577 342.077 L 95.500 344.500 292.397 345 L 489.295 345.500 430.026 404.500 C 397.428 436.950, 368.578 466.091, 365.915 469.258 C 360.356 475.868, 358.615 480.815, 358.615 490 C 358.614 500.733, 361.751 506.098, 376.791 521.089 C 390.197 534.451, 394.036 537.054, 403.096 538.923 C 409.346 540.213, 415.173 539.330, 422.984 535.909 C 429.609 533.007, 641.470 320.823, 645.053 313.500 C 648.565 306.323, 648.565 293.676, 645.053 286.500 C 643.117 282.546, 620.427 259.270, 536.553 175.202 C 478.224 116.738, 428.502 67.570, 426.059 65.939 C 418.762 61.067, 409.443 59.331, 401.500 61.362"
+                                    stroke="none" fill="#fff" fill-rule="transparent" style="width:200px"></path>
+                            </svg></a>
+                    </section>
+                </div>
+
+                <script src="validacion.js"></script>
+
+            </main>
+        </body-template>
+
+        <!-- FIN -->
+
+
+       
+
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://www.javer.maus.mx/app/libs/js/script.js"></script>
+    <script src="https://www.javer.maus.mx/app/libs/js/script2.js"></script>
+</body>
+
+</html>
